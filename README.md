@@ -11,18 +11,15 @@ Design
 
 This is the design I have thought for the role formula.
 
-=== Basic statements ===
-
 For the design of roles, we need to have clear that salt/top.sls is file that selects which states a machine has to, and that pillar/top.sls the pillars it has access to.
 
 The design of the roles should be taking this carefully into account, as the states to be included in salt/top.sls should be defined through the pillars. This is actually not a problem because one state can include others, therefore, salt/top.sls will need to have:
 
-
-´´´
+```
 base:
   '*':
     - role
-´´´
+```
 
 Role state is in charge of including all the states needed for an specific role, and drive the data to them.
 
