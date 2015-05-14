@@ -30,3 +30,9 @@ It is really important to make clear that all the states that are managed throug
 Also, in order not to loose all the flexibility pillars have with their hability to specify within different files all the config, we need to make sure that we don't loose that hability. At the same time, we should not be including neither all states nor all the config, so we will need some sort of logic to define inclusions in a natural way.
 
 Roles should neither be all defined within one file, so we should be carefull about supporting not only other pillars but other rules. Maybe it can be handled the same way.
+
+
+Example
+-------
+
+Rather than trying to adapt the design to the current syntax and formulas, a more polite aproach has been selected. Examples will follow the dream syntax, and trying to make them as close as possible to the reality.
